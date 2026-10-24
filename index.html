@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergino Martina | Digital Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --text: #f5f5f5;
+            --accent: #3b82f6;
+            --secondary: #a1a1aa;
+            --card-bg: #18181b;
+            --border: #27272a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        a:hover {
+            opacity: 0.8;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle at center, #1e1b4b 0%, #0a0a0a 100%);
+        }
+
+        header h1 {
+            font-size: clamp(3rem, 10vw, 6rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            color: var(--secondary);
+            letter-spacing: 0.1em;
+        }
+
+        section {
+            padding: 100px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .profile-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .profile-content p {
+            margin-bottom: 1.5rem;
+            color: var(--secondary);
+            font-size: 1.1rem;
+        }
+
+        .profile-visual {
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+        }
+
+        .card h3 {
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        .card ul {
+            list-style: none;
+        }
+
+        .card ul li {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            color: var(--secondary);
+        }
+
+        .portfolio-item {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: var(--card-bg);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        .portfolio-item h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .portfolio-item .project-info {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+
+        .footer {
+            padding: 100px 0;
+            text-align: center;
+            background: #000;
+        }
+
+        .contact-links {
+            margin-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .contact-link {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .highlight {
+            color: var(--accent);
+        }
+
+        footer span {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--secondary);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: var(--accent);
+            color: white;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sergino Martina</h1>
+        <p>Digital Developer</p>
+    </header>
+
+    <section id="profile">
+        <div class="container">
+            <h2 class="section-title">Profile</h2>
+            <div class="profile-grid">
+                <div class="profile-content">
+                    <p>Sergino is a versatile full-stack developer with a passion for design and creative problem-solving, blending technical expertise with an eye for user-centric design.</p>
+                    <p>Skilled in front-end technologies like React, Node.js and Next.js. He builds scalable web applications while ensuring seamless integration with databases, APIs, and servers.</p>
+                    <p>On the design side, he excels at creating visually striking, intuitive user interfaces (UI) and experiences (UX) that engage and delight, leveraging principles like typography, color theory, and motion graphics. Comfortable moving between wireframes, prototypes, and code.</p>
+                    <p>He brings a holistic approach that merges form and function, delivering innovative, high-quality solutions that push the boundaries of both design and development.</p>
+                </div>
+                <div class="profile-visual">
+                    <div class="card" style="text-align: center;">
+                        <h3 style="color: var(--text);">Core Focus</h3>
+                        <p style="color: var(--secondary);">Merging Form & Function</p>
+                        <div style="margin-top: 2rem; font-size: 4rem;">🎨 💻 🚀</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Proficiency</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <h3>Front-end Technologies</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>Next.js</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Software Development</h3>
+                    <ul>
+                        <li>SDLC</li>
+                        <li>Web Development</li>
+                        <li>UX/UI Development</li>
+                        <li>Coding & Debugging</li>
+                        <li>Quality Assurance</li>
+                        <li>Algorithm Implementation</li>
+                        <li>Technical Documentation</li>
+                        <li>Data Analysis</li>
+                        <li>Cloud Computing</li>
+                        <li>Graphic Designing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tools">
+        <div class="container">
+            <h2 class="section-title">Tools & Technologies</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <h3>Design & Creative</h3>
+                    <ul>
+                        <li>Adobe Creative Suite (Photoshop, Illustrator, XD, InDesign, Premiere, Sketch, Figma)</li>
+                        <li>Adobe Experience Cloud (AEM on premise, AEM as a cloud service, Target, Campaign)</li>
+                        <li>Graphic Designing</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Development & Cloud</h3>
+                    <ul>
+                        <li>Front-end Tools (Npm, Yarn, Webpack, Grunt, Skrollr, Greensock, jQuery, WordPress, WooCommerce, Elementor, Unlimited elements for Elementor)</li>
+                        <li>Cloud Services (AWS, Azure, Oracle, SOAP)</li>
+                        <li>Databases (MYSQL, Mongo DB, PostgreSQL)</li>
+                        <li>Testing (Unit Testing, TDD, A/B Testing, End-to-end Testing, Automated Tests)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="languages">
+        <div class="container">
+            <h2 class="section-title">Programming & Architecture</h2>
+            <div class="card">
+                <ul style="column-count: 2; list-style: none; font-size: 1.1rem;">
+                    <li><strong class="highlight">Languages:</strong> HTML5, CSS, SCSS, PHP, Java, Typescript, JavaScript, Angular, Vue.js, Next.js, React, Node.js</li>
+                    <li><strong class="highlight">Architecture:</strong> REST API, HTTP, AJAX, BEM, Async, Headless</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="companies">
+        <div class="container">
+            <h2 class="section-title">Companies</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <h3>Hired Directly</h3>
+                    <ul style="list-style: none;">
+                        <li>Ida</li>
+                        <li>Next Lead</li>
+                        <li>Google</li>
+                        <li>Pro Rail</li>
+                        <li>Designcorp</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Hired via iDA</h3>
+                    <ul style="list-style: none;">
+                        <li>Technische Unie</li>
+                        <li>Allianz</li>
+                        <li>Phillips</li>
+                        <li>APG</li>
+                        <li>Avery Dennison</li>
+                        <li>Goldwell</li>
+                        <li>Action</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            
+            <div class="portfolio-item">
+                <span class="badge">Development</span>
+                <h3>Technische Unie</h3>
+                <p class="project-info">Project: Website Development</p>
+                <a href="#">View website →</a>
+            </div>
+
+            <div class="portfolio-item">
+                <span class="badge">Optimization</span>
+                <h3>Allianz</h3>
+                <p class="project-info">Project: Website optimization</p>
+                <a href="#">View website →</a>
+            </div>
+
+            <div class="portfolio-item">
+                <span class="badge">Development</span>
+                <h3>Avery Dennison</h3>
+                <p class="project-info">Project: Website Development</p>
+                <a href="#">View website →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <h2 class="section-title" style="border:none; padding:0;">Let's talk.</h2>
+            <p>If you'd like to discuss your project or you have questions in any specific areas mentioned above, feel free to contact me.</p>
+            
+            <div class="contact-links">
+                <a href="tel:+31616039465"><span>Phone</span> +31616039465</a>
+                <a href="mailto:sergino@serginomartina.com"><span>Envelope</span> sergino@serginomartina.com</a>
+                <a href="https://linkedin.com/serginomartina"><span>Linkedin</span> linkedin.com/serginomartina</a>
+                <a href="https://github.com/serginomartina"><span>Github</span> github.com/serginomartina</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
